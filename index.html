@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- aqui pouedo cambiar el lenguaje de mi html-->
+<head>
+    <meta charset="UTF-8">  <!-- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">  <!-- Esta etiqueta nos ayuda a traer nuestro CSS externo -->
+    <style>  
+        body{
+            background-image: url(./src/img/togepi.png);/**/
+        }
+        .uno{
+            color: coral;
+        }
+        .dos{
+            color: blanchedalmond;
+        }
+        .tres{
+            color: burlywood;
+        }
+        #unico{
+            color: burlywood;
+            margin: 80px 100px 175px 100px; /*top righ bottom left*/
+            padding: 20px 20px 10px 50px;
+            border: 50px groove gold;
+            border-radius: 2rem 0rem 0rem 0rem;
+        }
+        nav{
+            padding: 25px;
+        }
+    </style> <!-- Primer forma de poner estilo (CSS interno)por class o id.
+    class en la etiqueta de los elementos, y se identifica con .nombreclass
+    id en la etiqueta del elemento UNICO, y se identifica con #nombreid -->
+    <title>Mi primera página web</title>
+</head> 
+<body tyle="background-image: url(./src/img/pokemon.webp);">
+    <header>  <!-- Primer contenido de la página -->
+        <img src="./src/img/ghibli background 4.jpg" alt="banner" width="860px" height="200px" >
+    </header> 
+    
+    <nav class="uno">  <!-- Este nos permite agregar elementos para la navegación en la web -->
+        <a href=""><img src="./src/img/pikachu.png" alt="icon Inicio" width="150px" height="100px"></a>
+        <a href=""><img src="./src/img/bulbasaur.png" alt="icon Productos" width="150px" height="100px"></a>
+        <a href=""><img src="./src/img/pokemon.webp" alt="icon Nosotros" width="150px" height="100px"></a>
+        <a href="./contacto.html"><img src="./src/img/charmander.png" alt="icon Contacto" width="100px" height="100px"></a>
+        <br>
+        <a href="">Inicio</a>
+        <a href="">Productos</a>
+        <a href="">Nosotros</a>
+        <a href="./servicios.html">Servicios</a>
+        <a href="./contacto.html">Contacto</a>
+        <a href="./grid.html">Responsivo</a>
+    </nav>  
+   
+    <section>  <!-- Este engloba un grupo de elementos, es muy parecido a div -->
+        <div class="dos">
+            <h1>Bienvenidas a Generation</h1>
+            <h2>Bienvenidas a Generation</h2>
+            <h3>Bienvenidas a Generation</h3>
+            <h4>Bienvenidas a Generation</h4>
+            <h5>Bienvenidas a Generation</h5>
+            <h6>Bienvenidas a Generation</h6>
+        </div>
+        <div class="dos">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nihil obcaecati, porro repellat praesentium beatae. Pariatur voluptas, ipsa ab iusto atque dicta saepe expedita perspiciatis nam eligendi autem suscipit doloribus?</p>
+
+            <br>
+            <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odio hic eveniet libero dignissimos corrupti quidem modi quasi iure, doloribus distinctio placeat optio debitis et repudiandae magni. Quidem, maxime quibusdam!</b>
+            <br>
+            <hr>
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium delectus id expedita tenetur distinctio unde culpa adipisci impedit sunt, vero rem facere! Sed ipsam porro officiis amet laudantium et sunt!</strong>
+        </div>
+        
+    </section>  
+
+    <div>
+        <ol>
+            <li>UNO</li>
+            <li>DOS</li>
+        </ol>
+    </div>
+   
+    <aside>  <!-- Contenido no relacionado a la página (espacio para publicidad) -->
+        <div class="tres">
+            <img src="./src/img/togepi.png" alt="togepi" width="100px" height="100px">
+            <h1>Bienvenidas a Generation</h1>
+            <h2>Bienvenidas a Generation</h2>
+            <h3>Bienvenidas a Generation</h3>
+            <h4>Bienvenidas a Generation</h4>
+            <h5>Bienvenidas a Generation</h5>
+            <h6>Bienvenidas a Generation</h6>
+        </div>
+        
+    </aside>  
+    
+    <article id="unico">  <!-- En este encontramos contenido único en la página -->
+        <ol>
+            <li>uno</li>
+            <li>dos</li>
+            <li>tres</li>
+        </ol>
+    </article>  
+    <div class="texto">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum eaque tenetur, quia molestias, quas soluta maiores maxime, magnam sunt nam quasi dolores dicta tempora distinctio incidunt? Enim pariatur perspiciatis vero.</p>
+    </div>
+
+    <footer>  <!-- Es el menú final, podemos encontrar información adicional -->
+        <a href="www.facebook.com"><img src="./src/img/fb icon.png" alt="FB" width="25px" height="25px"></a>
+        <a href="www.instagram.com"><img src="./src/img/ig icon.png" alt="IG" width="25px" height="25px"></a>
+        <a href="www.youtube.com"><img src="./src/img/yt icon.png" alt="YT" width="25px" height="25px"></a>       
+    </footer>  
+</body>
+</html>
+
+
+

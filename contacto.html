@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>  
+        .uno{
+            background-color: coral;
+        }
+        .dos{
+            color: orange;
+        }
+        .tres{
+            background-color: burlywood;
+        }
+        #unico{
+            background-color: aquamarine;
+        }
+        .barra{
+            background-color: blue;
+            color: red;
+            color-scheme: aqua;
+            border-color: brown;
+         }
+    </style>
+    <title>Contacto</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Por favor ingrese su nombre">
+        </div>
+        <div>
+            <label for="telefono">Teléfono</label>
+            <input type="number" id="telefono" name="telefono" placeholder="Ingrese su Teléfono">
+        </div>
+        <fieldset>
+            <h3>Documentos</h3>
+            <label for="">Identificación</label>
+            <input type="file" id="INE">
+        </fieldset>
+        <fieldset>
+            <h3>Botón tipo select</h3>
+            <label for="lenguaje">Que lenguaje de programación te interesa</label>
+            <select name="lenguaje" id="lenguaje">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+                <option value="Java">Java</option>
+            </select>
+            <!-- Tipo checkbox-->
+            <div>
+                <label id="unico" for="genero">Género</label>
+                <input type="checkbox" name="genero" id="genero">Mujer
+                <input type="checkbox" name="genero" id="genero">Hombre
+                <input type="checkbox" name="genero" id="genero">No binario
+            </div>
+            <!-- Tipo radio-->
+            <div>
+                <label class="dos" for="genero">Género</label>
+                <input type="radio" name="genero" id="genero">Mujer
+                <input type="radio" name="genero" id="genero">Hombre
+                <input type="radio" name="genero" id="genero">No binario
+            </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <fieldset>
+            <h2>Botones extra</h2>
+            <div>
+                <label for="rango">Rango</label>
+                <input class="barra" type="range" name="rango" id="rango">
+            </div>
+            <div>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div>
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha">
+            </div>
+            <div>
+                <label for="reloj">Hora</label>
+                <input type="time" name="reloj" id="reloj">
+            </div>
+            <div>
+                <label for="progreso">Barra de progreso</label>
+                <progress class="barra" min="1" max="100" value="75"></progress>   
+            </div>
+        </fieldset>
+    </form>
+
+    <button onclick="location.href='./index.html'">Regresar a Inicio</button>
+
+
+</body>
+</html>
+

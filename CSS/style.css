@@ -1,0 +1,69 @@
+*{ /*Selector universal, aplica para todos los elementos*/
+    font-family: sans-serif;
+}
+body{ /* Selectores de elementos, todas las etiquetas de html desde las que se identifica en CSS */
+  /*  background-image: url(../src/img/bulbasaur.png);  Este es un comentario en CSS*/
+    color: coral;
+}
+h1,p{ /*con la coma se hace agrupación de selectores*/
+    color: fuchsia;
+}
+
+p{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: justify; /*start,end,left,right,center*/
+    word-spacing: 50px;
+    text-transform: capitalize;
+    text-shadow: greenyellow 5px 1px 4px; 
+    /*color, desplazamiento horizontal de sombra, desplazamiento vertical desombra, blur*/
+}
+
+/*
+ol li{  Selectores descendientes
+    background-color: coral;
+}*/
+*:hover{ /*Seudoclases : ponerle efecto a mi etiqueta (selector:evento)*/
+    background-color: aqua;
+    color: black;
+}
+a{
+    text-decoration: overline; /*underline,overline,line-through,none*/
+}
+a:empty{ /*Seudoclases : ponerle efecto a mi etiqueta (selector:evento)*/
+    background-color: black;
+}
+a:link{ /*Seudoclases : ponerle efecto a mi etiqueta (selector:evento)*/
+    background-color: blue;
+}
+footer a img:visited{ /*Seudoclases : ponerle efecto a mi etiqueta (selector:evento)*/
+    background-color: green;
+}
+a:focus{ /*Seudoclases : ponerle efecto a mi etiqueta (selector:evento)*/
+    background-color: yellow;
+}
+a:active{ /*Seudoclases : ponerle efecto a mi etiqueta (selector:evento)*/
+    color: red;
+    font-style: oblique;
+}
+.texto{
+    background-color: gold;
+}
+.texto p::after{  /*Seudoselector selector::condicion*/
+    content: "😂";
+}
+.texto p::first-line{
+    color: blue;
+}
+.texto p::first-letter{
+    color: white;
+}
+
+/*
+
+
+
+
+
+*/

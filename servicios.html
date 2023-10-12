@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICIOS</title>
+    <style>
+        .card{
+            background: linear-gradient(90deg, red, blue 10%, yellow 20%, orange 30%, purple 60%);
+            background-color: cornflowerblue;
+            width: 300px;
+            height: 500px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        button{
+            background: radial-gradient(50px, purple, rgb(34,248,34));
+            color: white;
+            border: none;
+            padding: 10px;
+            /*width: 200px;*/
+        }
+        .card p{
+            text-align: justify;
+            width: 250px;
+            padding-left: 25px;
+        }
+        .card2{
+            width: 300px; ;
+            height: 500px ;
+            padding: 20px;
+            background-color: hotpink;
+            /*background: radial-gradient(50px 100px, gold, rgb(72,72,237));*/
+            text-align: center; 
+            border-radius: 10px; 
+            float: right;
+        }
+        .card2 p{
+            text-align: justify;
+            width: 250px;
+            padding-left: 25px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin: 50px;
+            justify-content: center; /*justifica de acuerdo a la página*/
+            justify-content: space-around; /*los divide en el espacio de la ágina con espacio enmedio*/
+            align-items: center; /*de preferencia al texto*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./src/img/bulbasaur.png" alt="" width="250px">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae et magnam consequatur corporis voluptates quasi voluptate dignissimos. Eum, voluptate aliquid voluptates tenetur facere porro nemo, ratione doloribus amet, ut ad.</p>
+            <button>Comprar</button>
+        </div>
+        <div class="card2">
+            <img src="./src/img/bulbasaur.png" alt="" width="250px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui labore, veritatis provident velit harum cumque,
+                assumenda tenetur modi facilis enim eius? Enim dignissimos, minus omnis facere non cumque laboriosam distinctio.
+            </p>
+            <button>Comprar</button>
+
+            <a href="https://maravillateam.github.io/centro-comunitario/">
+                <button>Ver más</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

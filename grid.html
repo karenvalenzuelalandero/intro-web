@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="SRC/img/descarga.png" type="image/x-icon">
+    <title>GRID</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            min-height: 100%;
+        }
+        html{
+            height: 100%;
+        }
+        .grid-container > *{
+           text-align: center;
+           border-radius: 15px;
+           padding: 10px;
+        }
+        .header{
+            grid-area: header;
+            background-color: crimson;
+        }
+        .navbar{
+            grid-area: navbar;
+            background-color: darkorange;
+        }
+        .sidebar{
+            grid-area: sidebar ;
+            background-color: blueviolet;
+        }
+        .main{
+            grid-area: main;
+            background-color: aquamarine;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: coral;
+        }
+        /*Teléfono*/
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+            "header"
+            "navbar"
+            "main"
+            "sidebar"
+            "footer"
+            ;
+        }
+        /*Para tablet*/
+        @media(min-width:768px){
+            .grid-container{
+                grid-template-columns: 200px auto ;
+                grid-template-rows: 100px 50px auto 100px;
+                grid-template-areas: 
+                "header header"
+                "navbar navbar"
+                "sidebar main"
+                "footer footer";
+            }
+        }
+        /*Para escritorio*/
+        @media(min-width:900px){
+            .grid-container{
+                grid-template-columns: 200px auto ;
+                grid-template-rows: 100px 50px auto 100px;
+                grid-template-areas: 
+                "header header header"
+                "navbar navbar navbar"
+                "sidebar sidebar main"
+                "footer footer footer";
+            }
+        }
+        /*Animaciones*/
+        @keyframes ajo{
+            from{
+                  opacity: 1;
+            }
+            to{
+                opacity: 0;
+            }
+        }
+        .ajo{
+            animation-name: ajo;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+
+        }
+
+    </style>
+</head>
+<body class="grid-container">
+    <header class="header">Header</header>
+    <nav class="navbar">Navbar</nav>
+    <aside class="sidebar">Sidebar</aside>
+    <article class="main">Articulo</article>
+    <footer class="footer">
+        <img class="ajo" src="https://static.vecteezy.com/system/resources/previews/014/456/363/original/cartoon-axolotl-mascot-free-png.png" alt="" width="100px" height="100px" >
+    </footer>
+</body>
+</html>

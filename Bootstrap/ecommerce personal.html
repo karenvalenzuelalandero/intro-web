@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Licuachelas MID</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        *{
+            color: #DCA810;
+        }
+        .container{
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+    </style>
+  </head>
+  <body>
+    <!--NAVBAR SCROLLSPY-->
+|   <nav id="navbar-example2" class="navbar navbar-expand-md navbar-dark fixed-top bg-warning px-3 mb-3 ">
+        <div class="container-fluid " >
+            <a class="navbar-brand" href="#">
+                <img src="https://i.redd.it/is-a-licuachela-v0-bdpxqzm3kbw81.jpg?width=514&format=pjpg&auto=webp&s=da46ed0a569b2423057b35a64e4f64c951e2c5f1" width="30" height="30" class="d-inline-block align-top" alt=""> LICUACHELAS</a>
+                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse" >
+                <ul class="nav nav-pills navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading4">Donde nos ubicamos</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-secondary">
+                <a href=""><i class="bi bi-cart3" style="font-size: 1rem; "></i></a>
+            </button>
+        </div>
+    </nav>
+
+
+    <!--BANNER GALLERY AUTOPLAY-->
+    <div class="container text-center mw-100 " >
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+            <div class="carousel-inner ">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://www.elheraldodechihuahua.com.mx/incoming/b6hrpf-kittychelas/ALTERNATES/LANDSCAPE_768/kittychelas" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://i0.wp.com/www.mipuntodevista.com.mx/wp-content/uploads/2022/06/Micheladas-cerveza.jpg?fit=768%2C479&ssl=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://eltiempomx.com/cdn-cgi/image/format=auto,width=730/monclova/2023/06/647a1246ac9b6.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--PARA IDENTIFICAR PARA EL SCROLLSPY-->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        
+        <!--SECCION NOSOTROS -->
+        <div class="container text-center" id="Us">
+            <h4 id="scrollspyHeading1" style="padding-bottom: 20px;">CONÓCENOS</h4>
+            <!--TAB TEXTO -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Licuachelas</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Licuacheros</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Sé un licuachero!</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled></button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">Build fast, responsive sites with Bootstrap
+                    Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
+                    Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
+                    Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <div class="container  ">
+                        <div class="row">
+                          <div class="col " >
+                            <div class="card text-bg-dark">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfOfkuKomG7nY7P3MzEwJqR0328hAn4wrth9rOfmlGhdO2Bh8N-kQdB-Dj_9DbLKvDg6c&usqp=CAU" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">John Snow</h5>
+                                  <!-- <p class="card-text">Licuachero con 2+ años de experiencia preparando tus licuachelas preferidas.</p> -->
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col " >
+                            <div class="card text-bg-dark">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfOfkuKomG7nY7P3MzEwJqR0328hAn4wrth9rOfmlGhdO2Bh8N-kQdB-Dj_9DbLKvDg6c&usqp=CAU" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">John Snow</h5>
+                                  <!-- <p class="card-text">Licuachero con 2+ años de experiencia preparando tus licuachelas preferidas.</p> -->
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col " >
+                            <div class="card text-bg-dark">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfOfkuKomG7nY7P3MzEwJqR0328hAn4wrth9rOfmlGhdO2Bh8N-kQdB-Dj_9DbLKvDg6c&usqp=CAU" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                  <h5 class="card-title">John Snow</h5>
+                                  <!-- <p class="card-text">Licuachero con 2+ años de experiencia preparando tus licuachelas preferidas.</p> -->
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>   
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <form class="form p-3">
+                    
+                        <div class="row mb-3">
+                            <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Nombre completo</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Escribe sobre ti</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="formFile" class="col-sm-2 col-form-label">Vacante </label>
+                            <div class="col-sm-10">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Selecciona el puesto de la vacante</option>
+                                    <option value="1">Licuadora</option>
+                                    <option value="2">Licuachero</option>
+                                    <option value="3">Lavavajilla</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="formFile" class="col-sm-2 col-form-label">Sube el PDF de tu CV</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">Build fast, responsive sites with Bootstrap
+                    Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
+                    Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
+                    Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</div>
+            </div>  <!--FIN TAB TEXTO -->
+        </div> <!--FIN SECCION NOSOTROS -->
+
+        <!--SECCION PRODUCTOS -->
+        <div class="container text-center" id="Products">
+            <h4 id="scrollspyHeading2" style="padding-bottom: 20px;">CONOCE NUESTROS PRODUCTOS</h4>
+            <!--FILA DE PRODUCTOS-->
+            <div class="row" >
+                <!--COLUMN-->
+                <div class="col" style="background-color: #DCA810;">
+                    <!--CARD-->
+                    <div class="card mb-3 mt-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://i.redd.it/is-a-licuachela-v0-bdpxqzm3kbw81.jpg?width=514&format=pjpg&auto=webp&s=da46ed0a569b2423057b35a64e4f64c951e2c5f1" class="img-fluid rounded my-5" alt="...">
+                            </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <a href="#Products" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div> <!--FIN CARD-->
+                </div> <!--FIN COLUMN-->
+                <!--COLUMN-->
+                <div class="col" style="background-color:#DCA810;">
+                    <!--CARD-->
+                    <div class="card mb-3  mt-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://i.redd.it/is-a-licuachela-v0-bdpxqzm3kbw81.jpg?width=514&format=pjpg&auto=webp&s=da46ed0a569b2423057b35a64e4f64c951e2c5f1" class="img-fluid rounded  my-5" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a href="#Products" class="btn btn-primary">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--FIN CARD-->
+                </div><!--FIN COLUMN-->
+                <!--COLUMN-->
+                <div class="col" style="background-color:#DCA810;">
+                    <!--CARD-->
+                    <div class="card mb-3  mt-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://i.redd.it/is-a-licuachela-v0-bdpxqzm3kbw81.jpg?width=514&format=pjpg&auto=webp&s=da46ed0a569b2423057b35a64e4f64c951e2c5f1" class="img-fluid rounded my-5" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="#Products" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div><!--FIN CARD-->
+              </div><!--FIN COLUMN-->
+            </div> <!--FIN FILA DE PRODUCTOS-->
+            <!--FILA DE PRODUCTOS-->
+            <div class="row">
+                <!--COLUMN-->
+                <div class="col" style="background-color: #DCA810;">
+                    <!--CARD-->
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://i.redd.it/is-a-licuachela-v0-bdpxqzm3kbw81.jpg?width=514&format=pjpg&auto=webp&s=da46ed0a569b2423057b35a64e4f64c951e2c5f1" class="img-fluid rounded my-5" alt="...">
+                            </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <a href="#Products" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div> <!--FIN CARD-->
+                </div> <!--FIN COLUMN-->
+                <!--COLUMN-->
+                <div class="col" style="background-color:#DCA810;">
+                    <!--CARD-->
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://i.redd.it/is-a-licuachela-v0-bdpxqzm3kbw81.jpg?width=514&format=pjpg&auto=webp&s=da46ed0a569b2423057b35a64e4f64c951e2c5f1" class="img-fluid rounded my-5" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a href="#Products" class="btn btn-primary">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--FIN CARD-->
+                </div><!--FIN COLUMN-->
+                <!--COLUMN-->
+                <div class="col" style="background-color:#DCA810;">
+                    <!--CARD-->
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://i.redd.it/is-a-licuachela-v0-bdpxqzm3kbw81.jpg?width=514&format=pjpg&auto=webp&s=da46ed0a569b2423057b35a64e4f64c951e2c5f1" class="img-fluid rounded my-5" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <a href="#Products" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div><!--FIN CARD-->
+              </div><!--FIN COLUMN-->
+            </div> <!--FIN FILA DE PRODUCTOS-->
+
+        </div> <!--FIN SECCION PRODUCTOS -->
+
+        
+
+
+
+        <!--SECCION MAPA -->
+        <div class="container text-center ">
+            <h4 id="scrollspyHeading4" style="padding-bottom: 20px;">DONDE NOS UBICAMOS</h4>
+            <h6>Dirección</h6>
+            <p>Shotimilco, Plaza Mangus, C. 11, Fundura Montebello, 97113 Mérida, Yuc. </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d119163.60402497878!2d-89.74550195664064!3d21.038182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x8f5676f15e56ce81%3A0xc36607e85a969ac9!2sShotimilco%2C%20Plaza%20Mangus%2C%20C.%2011%2C%20Fundura%20Montebello%2C%2097113%20M%C3%A9rida%2C%20Yuc.!3m2!1d21.038182!2d-89.6013064!5e0!3m2!1ses!2smx!4v1697066339023!5m2!1ses!2smx" width="100%" height="450px" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+        </div> <!--FIN SECCION MAPA -->
+
+    </div>  <!--CIERRA EL IDENTIFICADOR PARA EL SCROLLSPY-->
+
+
+    <footer class="footer bg-warning ">
+        <div class="row p-3">
+            <div class="col text-success-emphasis px-4" >
+            Desarrollado por Karen Valenzuela Landero
+            <div class="col text-success-emphasis " >
+                <a href="https://www.linkedin.com/in/karenvalenzuelalandero/"><i class="bi bi-linkedin fs-3 mb-3" style="color: black;"></i></a>
+                <a href="https://github.com/karenvalenzuelalandero"><i class="bi bi-github fs-3 mb-3" style="color: black;"></i></a>
+                </div>
+            </div>
+            <div class="col text-success-emphasis px-4" style="text-align: end;">
+            Derechos Reservados <br> Octubre 2023
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
